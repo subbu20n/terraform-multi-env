@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 ExecStart=/opt/prometheus/prometheus --config.file=/opt/prometheus/prometheus.yml
-Restart=always
+Restart=on-failure
 
 
 [Install]
